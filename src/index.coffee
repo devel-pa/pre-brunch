@@ -12,7 +12,7 @@ module.exports = class PreBrunch
     @commands = @config.plugins.preBrunch ? []
 
   lint: (data, path, callback) ->
-    return if @executed
+    return callback null if @executed
     for command in @commands
       exec command, (error, stdout, stderr) ->
         console.log stdout if stdout
