@@ -16,3 +16,7 @@ exports.config =
       'styledocco -n "My Project" css'
     ]
 ```
+
+## Credits
+
+pre-brunch is a modified version of after-brunch: https://github.com/Creative-Licence-Digital/after-brunch
