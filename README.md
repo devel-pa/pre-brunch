@@ -2,7 +2,7 @@
 Want to run something on the command line everytime before [brunch](http://brunch.io) compiles? Easy.
 
 ## Usage
-Add `"pre-brunch": "x.y.z"` to `package.json` of your brunch app.
+Add `"pre-brunch": "https://github.com/devel-pa/pre-brunch/archive/master.tar.gz"` to `package.json` of your brunch app.
 Or `npm install pre-brunch --save`.
 
 Then in your `config.coffee` just add any commands to the afterBrunch array.
@@ -16,6 +16,8 @@ exports.config =
       'styledocco -n "My Project" css'
     ]
 ```
+
+Work as a linter.
 
 ## Credits
 
