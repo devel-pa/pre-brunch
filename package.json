@@ -6,7 +6,7 @@
   "author": "Paul Apostol",
   "license": "BSD",
   "dependencies": {
-      "execSync": "1.0.2"
+      "shelljs": "0.3.0"
   },
   "scripts": {
     "prepublish": "rm -rf lib && coffee --bare --output lib/ src/"
