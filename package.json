@@ -1,0 +1,24 @@
+{
+  "name": "pre-brunch",
+  "version": "0.0.5",
+  "description": "A micro-plugin to run commands line scripts before Brunch's compile.",
+  "main": "./lib/index",
+  "author": "Paul Apostol",
+  "license": "BSD",
+  "dependencies": {},
+  "scripts": {
+    "prepublish": "rm -rf lib && coffee --bare --output lib/ src/"
+  },
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/devel-pa/pre-brunch"
+  },
+  "keywords": [
+    "brunch",
+    "before",
+    "commands",
+    "pre-compile"
+  ],
+  "devDependencies": {}
+}
