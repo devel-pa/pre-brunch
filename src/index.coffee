@@ -4,7 +4,7 @@ sysPath = require 'path'
 module.exports = class PreBrunch
   brunchPlugin: yes
   type: 'javascript'
-  extension: 'js'
+  extension: '*'
 
   executed: false
 
