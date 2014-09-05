@@ -5,7 +5,9 @@
   "main": "./lib/index",
   "author": "Paul Apostol",
   "license": "BSD",
-  "dependencies": {},
+  "dependencies": {
+      "execSync": "1.0.2"
+  },
   "scripts": {
     "prepublish": "rm -rf lib && coffee --bare --output lib/ src/"
   },

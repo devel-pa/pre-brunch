@@ -1,5 +1,6 @@
 sysPath = require 'path'
-{exec}  = require 'child_process'
+#{exec}  = require 'child_process'
+sh = require 'execSync'
 
 module.exports = class PreBrunch
   brunchPlugin: yes
@@ -14,10 +15,11 @@ module.exports = class PreBrunch
   lint: (data, path, callback) ->
     return callback null if @executed
     for command in @commands
-      exec command, (error, stdout, stderr) ->
-        console.log stdout if stdout
-        console.log error.message if error
-        console.log stderr if stderr
+#      exec command, (error, stdout, stderr) ->
+#        console.log stdout if stdout
+#        console.log error.message if error
+#        console.log stderr if stderr
+      sh.run command
     @executed = true
     callback null
   onCompile: () ->
