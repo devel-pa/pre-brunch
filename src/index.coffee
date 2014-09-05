@@ -20,3 +20,6 @@ module.exports = class PreBrunch
         console.log stderr if stderr
     @executed = true
     callback null
+  onCompile: () ->
+    @executed = true
+    return
